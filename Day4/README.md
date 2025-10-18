@@ -70,21 +70,40 @@ The noise margin depends on **device sizing ratio (Wp/Wn)**, supply voltage, and
 ## 🧾 4. Example SPICE Netlist for Noise Margin Evaluation
 
 ```spice
-* CMOS Inverter Noise Margin - Sky130
-.include ./sky130_fd_pr__nfet_01v8.model
-.include ./sky130_fd_pr__pfet_01v8.model
+*Model Description
+.param temp=27
 
-Vdd vdd 0 1.8
-Vin in 0 DC 0
-CL out 0 10f
 
-M1 out in 0 0 sky130_fd_pr__nfet_01v8 w=1u l=0.15u
-M2 out in vdd vdd sky130_fd_pr__pfet_01v8 w=2u l=0.15u
+*Including sky130 library files
+.lib "sky130_fd_pr/models/sky130.lib.spice" tt
 
-* DC sweep for input voltage
-.DC Vin 0 1.8 0.01
-.print DC V(out)
+
+*Netlist Description
+
+
+XM1 out in vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=0.15
+XM2 out in 0 0 sky130_fd_pr__nfet_01v8 w=0.36 l=0.15
+
+
+Cload out 0 50fF
+
+Vdd vdd 0 1.8V
+Vin in 0 1.8V
+
+*simulation commands
+
+.op
+
+.dc Vin 0 1.8 0.01
+
+.control
+run
+setplot dc1
+display
+.endc
+
 .end
+
 ```
  * ## Plot
    <img width="1204" height="764" alt="Screenshot from 2025-10-18 16-25-36" src="https://github.com/user-attachments/assets/cc471098-04e6-4f72-9d1b-b7e6b8876dc6" />
