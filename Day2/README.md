@@ -136,8 +136,8 @@ when
 [
 E \geq E_{crit} \quad \text{(critical electric field)}
 ]
-
 This linear relation (instead of quadratic) limits current drive.
+
 ![IMG](https://github.com/user-attachments/assets/ad389b91-da04-49c1-8cd7-885007d4a41f)
 
 ---
