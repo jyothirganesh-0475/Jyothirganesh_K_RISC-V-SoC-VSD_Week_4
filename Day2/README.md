@@ -124,6 +124,10 @@ setplot dc1
 
 ### A3. **Velocity Saturation Model**
 
+This is one of the effect for short channel. Conventionally there are three mode of operation of mosfet viz cut off, linear and saturation region, however for lower nodes there are four mode of operation with velocity saturation region being one apart from the other three. In velocity saturation effect it is observe that for lower value of electric field the velocity is linear however after a certain time or higher electric field the velocity starts to saturate or becomes constant due to an effect known as scattering effect.
+
+![IMG](https://github.com/user-attachments/assets/231c002d-67f6-4329-a44f-b206a1d063ef)
+
 For short-channel devices,
 [
 I_{ds} = W C_{ox} v_{sat} (V_{gs} - V_t)
@@ -134,6 +138,7 @@ E \geq E_{crit} \quad \text{(critical electric field)}
 ]
 
 This linear relation (instead of quadratic) limits current drive.
+![IMG](https://github.com/user-attachments/assets/ad389b91-da04-49c1-8cd7-885007d4a41f)
 
 ---
 
