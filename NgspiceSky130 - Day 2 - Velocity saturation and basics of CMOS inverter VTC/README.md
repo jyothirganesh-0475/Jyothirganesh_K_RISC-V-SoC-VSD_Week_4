@@ -200,7 +200,7 @@ V_{DSN} = V_{out}, \quad V_{SDP} = V_{DD} - V_{out}
 * Ngspice User Guide
 * “Digital Integrated Circuits” — Jan M. Rabaey
 * “CMOS Digital Integrated Circuits” — Neil H. E. Weste
-
+* GitHub: [Sky130CircuitDesignWorkshop](https://github.com/kunalg123/sky130CircuitDesignWorkshop/)
 ---
 
 
