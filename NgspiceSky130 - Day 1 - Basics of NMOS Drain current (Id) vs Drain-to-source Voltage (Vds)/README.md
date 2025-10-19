@@ -210,5 +210,5 @@ setplot dc1
 * Ngspice User Manual
 * VSD Sky130 Workshop
 * Standard VLSI Device Physics Texts (e.g., CMOS VLSI Design: A Circuits and Systems Perspective)
-
+* GitHub: [Sky130CircuitDesignWorkshop](https://github.com/kunalg123/sky130CircuitDesignWorkshop/)
 ---
