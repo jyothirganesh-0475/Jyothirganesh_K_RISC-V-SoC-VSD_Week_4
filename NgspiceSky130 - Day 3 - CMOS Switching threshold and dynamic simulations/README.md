@@ -201,5 +201,5 @@ plot v(in) v(out)
 * Sky130 PDK Documentation — SkyWater Technology Foundry
 * CMOS VLSI Design — Neil Weste & David Harris
 * Digital Integrated Circuits — Jan M. Rabaey
-
+* GitHub: [Sky130CircuitDesignWorkshop](https://github.com/kunalg123/sky130CircuitDesignWorkshop/)
 ---
