@@ -169,5 +169,5 @@ Proper NM analysis enables designers to fine-tune **device sizing and layout** f
 * Ngspice Results with Noise Margin Calculation
 * VTC Analysis & Robustness Discussion
 * Sizing Variation Study
-
+* GitHub: [Sky130CircuitDesignWorkshop](https://github.com/kunalg123/sky130CircuitDesignWorkshop/)
 ---
